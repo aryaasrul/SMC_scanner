@@ -124,11 +124,16 @@ def check_accumulation_distribution(df, lookback=20):
     
     recent = df.iloc[-lookback:].copy()
     
+    # Menghindari warning Division by Zero
+    high_low_range = recent['high'] - recent['low']
+    high_low_range = high_low_range.replace(0, 0.000001) # Safety check
+    
     recent['mf_multiplier'] = (
         (recent['close'] - recent['low']) - (recent['high'] - recent['close'])
-    ) / (recent['high'] - recent['low'])
+    ) / high_low_range
     
-    recent['mf_multiplier'].fillna(0, inplace=True)
+    # PERBAIKAN WARNING PANDAS DI SINI:
+    recent['mf_multiplier'] = recent['mf_multiplier'].fillna(0)
     
     recent['mf_volume'] = recent['mf_multiplier'] * recent['volume']
     

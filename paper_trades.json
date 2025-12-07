@@ -1,0 +1,57 @@
+{
+    "balance": 1000,
+    "trades": [
+        {
+            "id": 1765094393,
+            "symbol": "AAVE/USDC:USDC",
+            "entry_time": "2025-12-07 14:59:53.830977",
+            "side": "LONG",
+            "leverage": 10,
+            "entry_price": 189.38,
+            "stop_loss": 187.48,
+            "tp1": 193.18,
+            "tp2": 195.08,
+            "quantity": 5.263157894736827,
+            "position_size_usd": 996.7368421052603,
+            "margin_used": 99.67368421052603,
+            "risk_usd": 10.0,
+            "status": "OPEN",
+            "pnl": 0
+        },
+        {
+            "id": 1765097121,
+            "symbol": "ARB/USDC:USDC",
+            "entry_time": "2025-12-07 15:45:21.845842",
+            "side": "LONG",
+            "leverage": 10,
+            "entry_price": 0.20799,
+            "stop_loss": 0.20688,
+            "tp1": 0.21021,
+            "tp2": 0.21132,
+            "quantity": 9009.009009009009,
+            "position_size_usd": 1873.783783783784,
+            "margin_used": 187.3783783783784,
+            "risk_usd": 10.0,
+            "status": "OPEN",
+            "pnl": 0
+        },
+        {
+            "id": 1765103115,
+            "symbol": "PENGU/USDC:USDC",
+            "entry_time": "2025-12-07 17:25:15.624454",
+            "side": "LONG",
+            "leverage": 10,
+            "entry_price": 0.011347,
+            "stop_loss": 0.011313,
+            "tp1": 0.011415,
+            "tp2": 0.011449,
+            "quantity": 294117.64705882955,
+            "position_size_usd": 3337.3529411765385,
+            "margin_used": 333.73529411765384,
+            "risk_usd": 10.0,
+            "status": "OPEN",
+            "pnl": 0
+        }
+    ],
+    "history": []
+}
